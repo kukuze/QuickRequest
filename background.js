@@ -114,7 +114,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
 });
 
 const urlFixRule = {
-    "https://blog.csdn.net/sumatch/article/details/": (url) => {
+    "https://blog.csdn.net/": (url) => {
         return url.split("?")[0];
     },
     "https://www.bilibili.com/video/": (url) => {
